@@ -1,0 +1,6 @@
+import = [
+	"~/.config/alacritty/catppuccin-frappe.toml"
+]
+
+[window]
+

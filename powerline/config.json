@@ -1,0 +1,13 @@
+{
+	"common": {
+		"term_truecolor": true,
+		"interval": 100000000,
+		"reload_config": false
+	},
+	"ext": {
+		"shell": {
+			"colorscheme": "default",
+			"theme": "default"
+		}
+	}
+}

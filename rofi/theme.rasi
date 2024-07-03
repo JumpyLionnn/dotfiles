@@ -1,0 +1,168 @@
+
+* {
+	rosewater: #f2d5cf;
+	flamingo: #eebebe;
+	pink: #f4b8e4;
+	mauve: #ca9ee6;
+	red: #e78284;
+	maroon: #ea999c;
+	peach: #ef9f76;
+	yellow: #e5c890;
+	green: #a6d189;
+	teal: #81c8be;
+	sky: #99d1db;
+	sapphire: #85c1dc;
+	blue: #8caaee;
+	lavender: #babbf1;
+	text: #c6d0f5;
+	subtext1: #b5bfe2;
+	subtext0: #a5adce;
+	overlay2: #949cbb;
+	overlay1: #838ba7;
+	overlay0: #737994;
+	surface2: #626880;
+	surface1: #51576d;
+	surface0: #414559;
+	base: #303446;
+	mantle: #292c3c;
+	crust: #232634;
+}
+window {
+	height: 500px;
+	width: 800px;
+	border: 3px solid;
+	// transparency doesnt work without a compositor
+	// the compositor doenst work for various reasons
+	//border-radius: 10px;
+	border-color: @blue;
+	transparency: "real";
+
+	background-color: @base;
+	text-color: @text;
+}
+
+mainbox {
+	enabled: true;
+	background-color: inherit;
+	spacing: 10px;
+	margin: 0px;
+	padding: 20px;
+	children: [inputbar, message, listview, mode-switcher];
+}
+
+inputbar {
+	enabled: true;
+	spacing: 10px;
+	margin: 0px;
+	padding: 15px;
+	border-radius: 12px;
+	background-color: @surface1;
+	text-color: @text;
+	children: [entry, num-filtered-rows];
+}
+
+prompt {
+	enabled: true;
+	background-color: inherit;
+	text-color: inherit;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+entry {
+	enabled: true;
+	background-color: inherit;
+	text-color: inherit;
+	cursor: text;
+	padding: 0px;
+	margin: 0px;
+	placeholder: "Search...";
+	placeholder-color: @overlay2;
+}
+
+num-filtered-rows {
+	background-color: inherit;
+	text-color: @text;
+}
+
+listview {
+	enabled: true;
+	cycle: true;
+	dynamic: true;
+	columns: 1;
+	scrollbar: true;
+	layout: vertical;
+	reverse: false;
+	
+	spacing: 5px;
+	margin: 0px;
+	padding: 0px;
+	background-color: transparent;
+	text-color: @text;
+	cursor: default;
+}
+
+scrollbar {
+	handle-width: 5px;
+	handle-color: @blue;
+	background-color: @surface1;
+}
+
+element {
+	enabled: true;
+	spacing: 10px;
+	margin: 0px;
+	padding: 5px;
+	border-radius: 12px;
+	border: 0px solid;
+	background-color: transparent;
+	text-color: @text;
+	cursor: pointer;
+}
+
+element normal {
+	background-color: transparent;
+	text-color: @text;
+}
+
+element selected {
+	background-color: @blue;
+	text-color: @base;
+}
+
+element-icon {
+	background-color: inherit;
+	text-color: inherit;
+	size: 1.8em;
+}
+
+element-text {
+	background-color: inherit;
+	text-color: inherit;
+	vertical-align: 0.5;
+}
+
+mode-switcher {
+	enabled: true;
+	spacing: 0px;
+	background-color: @base;
+	margin: 0px;
+	padding: 0px;
+	orientation: horizontal;
+}
+
+button {
+	padding: 10px;
+	background-color: @base;
+	text-color: @text;
+	margin: 0px;
+	spacing: 0px;
+}
+
+button selected {
+	border: 4px 0px 0px 0px;
+	border-color: @maroon;
+	background-color: @surface1;
+}
+

@@ -1,0 +1,31 @@
+{
+	"outer_padding": 1,
+
+	"segments": {
+		"left": [
+			{
+				"function": "powerline.segments.common.env.user",
+				"priority": 10
+			},
+			{
+				"function": "powerline.segments.common.env.cwd",
+				"args": {
+					"dir_shorten_len": 15,
+					"dir_limit_depth": 4,
+					"shorten_home": true,
+					"ellipsis": "…" 
+				},
+				"priority": 100
+			},
+			{
+				"function": "powerline.segments.common.env.virtualenv",
+				"priority": 50
+			},
+			{
+				"function": "powerline.segments.common.vcs.branch",
+				"priority": 80
+			}
+		],
+		"right": []
+	}
+}

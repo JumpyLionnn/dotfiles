@@ -1,0 +1,5 @@
+require("plugins.colors")
+require("plugins.treesitter")
+require("plugins.lsp")
+require("plugins.telescope")
+require("plugins.comment")

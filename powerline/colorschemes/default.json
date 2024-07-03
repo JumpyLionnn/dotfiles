@@ -1,0 +1,20 @@
+{
+	"name": "Default",
+	"groups": {
+		"information:additional":     { "fg": "base", "bg": "mauve", "attrs": [] },
+		"information:regular":        { "fg": "subtext0", "bg": "overlay2", "attrs": ["bold"] },
+		"information:highlighted":    { "fg": "white", "bg": "oberlay2", "attrs": [] },
+		"information:priority":       { "fg": "yellow", "bg": "green", "attrs": [] },
+		"warning:regular":            { "fg": "text", "bg": "red", "attrs": ["bold"] },
+		"critical:failure":           { "fg": "text", "bg": "red", "attrs": [] },
+		"critical:success":           { "fg": "text", "bg": "green", "attrs": [] },
+		"background":                 { "fg": "text", "bg": "surface0", "attrs": [] },
+		"background:divider":         { "fg": "surface2", "bg": "surface0", "attrs": [] },
+		"user":                       { "fg": "green", "bg": "surface2", "attrs": ["bold"] },
+		"cwd":                        { "fg": "base", "bg": "blue", "attrs": []},
+		"cwd:current_folder":         { "fg": "base", "bg": "blue", "attrs": []},
+		"cwd:divider":                { "fg": "base", "bg": "blue", "attrs": ["bold"] },
+		"virtualenv":                 { "fg": "overlay0", "bg": "sapphire", "attrs": [] },
+		"branch": 		      { "fg": "surface0", "bg": "mauve", "attrs": [] }
+	}
+}
