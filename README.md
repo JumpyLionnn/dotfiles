@@ -1,5 +1,6 @@
 # dotfiles
 my dot files for arch linux and i3
+I use arch btw
 
 AUR helper: paru
 
