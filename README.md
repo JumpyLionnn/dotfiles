@@ -13,6 +13,7 @@ AUR helper: paru
  - alacritty
  - neovim
  - ripgrep - for neovim
+ - powerline - for bash
 
 #### if using virtual box
  - install virtual-box-guest-utils and follow this https://wiki.archlinux.org/title/VirtualBox/Install_Arch_Linux_as_a_guest
