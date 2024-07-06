@@ -11,6 +11,9 @@ alias grep='grep --color=auto'
 alias premake='premake5'
 PS1='[\u@\h \W]\$ '
 
+
+export HISTCONTROL=ignoreboth:erasedups
+
 # Powerline
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
