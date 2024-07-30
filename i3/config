@@ -24,7 +24,7 @@ exec_always --no-startup-id xrandr --output Virtual1 --mode 1920x1080
 
 # Launch polybar
 exec_always --no-startup-id sh ~/.i3/polybar.sh &
-exec_always feh --bg-scale ~/.config/wallpapers/arch_wallpaper.png
+exec_always --no-startup-id feh --bg-scale ~/.config/wallpapers/arch_wallpaper.png
 
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -61,6 +61,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 title_align center
+for_window [all] title_window_icon padding 10px
 
 
 # start a terminal
