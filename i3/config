@@ -62,10 +62,10 @@ tiling_drag modifier titlebar
 
 title_align center
 for_window [all] title_window_icon padding 10px
-
+focus_follows_mouse on
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -198,6 +198,7 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
 
 set $rosewater #f2d5cf
 set $flamingo #eebebe

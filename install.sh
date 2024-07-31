@@ -23,12 +23,20 @@ echo "Installing fonts"
 paru -S ttf-twemoji
 
 echo "Installing terminal and shell"
-paru -S alacritty
+paru -S kitty
 paru -S powerline
-link alacritty ~/.config/alacritty
+link kitty ~/.config/kitty
 link powerline ~/.config/powerline
 link .bashrc ~/.bashrc
 
 echo "Installing neovim"
 paru -S neovim ripgrep
 link nvim ~/.config/nvim
+
+echo "Installing yazi"
+paru -S yazi
+link yazi ~/.config/yazi
+
+echo "Insalling git client"
+paru -S gitui
+link gitui ~/.config/gitui

@@ -11,6 +11,16 @@ alias grep='grep --color=auto'
 alias premake='premake5'
 PS1='[\u@\h \W]\$ '
 
+yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+export -f yy
 
 export HISTCONTROL=ignoreboth:erasedups
 
