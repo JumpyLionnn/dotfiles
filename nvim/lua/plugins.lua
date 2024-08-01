@@ -42,4 +42,6 @@ return packer.startup(function(use)
           "williamboman/mason.nvim"
   }
   use { "williamboman/mason-lspconfig.nvim", "neovim/nvim-lspconfig" }
+
+  use { "mikavilpas/yazi.nvim" }
 end)

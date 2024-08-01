@@ -1,3 +1,4 @@
+require("plugins.yazi")
 require("plugins.colors")
 require("plugins.treesitter")
 require("plugins.lsp")
