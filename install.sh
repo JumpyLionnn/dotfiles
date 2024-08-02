@@ -1,6 +1,16 @@
 #!/bin/sh
 
 link() {
+    if test -d $2; then
+        echo "Delete $2? "
+        read answer
+        if [answer != "y" || answer != "yes"]
+            return
+        else
+            rm -r $2
+        fi
+        
+    fi
     ln -s "$(readlink -f $1)" $2
 }
 
